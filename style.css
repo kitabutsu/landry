@@ -236,31 +236,12 @@ a {
     background: rgba(143, 247, 222, 0.13);
 }
 .about_text {
+    position: relative;
     width: 80%;
     margin: 0 auto;
 }
-.about_text_com {
-    position: absolute;
-    width: 166px;
-    height: 70px;
-    left: 470px;
-    top: 1610px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    padding-top: 10px;
-    color: #FF3103;
-    transform: rotate(-20deg);
-    border-radius: 45%;
-    border: solid 1px rgb(53, 153, 246);
-}
 .about_text h2 {
-    /*position: absolute;
+    /*position: relative;
     width: 457px;
     height: 48px;
     left: 477px;
@@ -275,6 +256,26 @@ a {
     letter-spacing: 0.05em;
     text-decoration-line: underline;
     padding-top: 100px;
+}
+.about_text_com {
+    position: absolute;
+    width: 166px;
+    height: 70px;
+    left: 200px;
+    top: 50px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    padding-top: 10px;
+    color: #FF3103;
+    transform: rotate(-20deg);
+    border-radius: 45%;
+    border: solid 1px rgb(53, 153, 246);
 }
 .about_text_con {
     /*position: absolute;
@@ -405,14 +406,15 @@ a {
 /*解決策*/
 
 .about_qs_ans {
+    position: relative;
     margin-top: 100px;
 }
 .about_qs_ans p {
     position: absolute;
     width: 250px;
     height: 58px;
-    left: 400px;
-    top: 3000px;
+    left: 270px;
+    top: -30px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -431,7 +433,7 @@ a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 32px;
     line-height: 58px;
     text-align: center;
     letter-spacing: 0.15em;
@@ -451,7 +453,7 @@ a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 48px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -478,7 +480,7 @@ a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 48px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -550,7 +552,7 @@ a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 48px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -586,42 +588,55 @@ a {
     margin-top: 100px;
     margin-bottom: 40px;
 }
+.image {
+    position:relative;
+    overflow:hidden;
+    padding-bottom:50%;
+    margin: 0 auto;
+}
 .img-1 {
-    position: relative;
+    position:absolute;
+    height: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.img-1 {
     width: 450px;
     height: 600px;
     z-index: -1;
 }
 .img-2 {
     width: 400px;
-    height: 400px;
+    height: 350px;
 }
-.img-3 {
-    width: 400px;
-    height: 400px;
-}
-.voice_img .container .row {
+/*.voice_img .container .row {
     position: relative;
-    justify-content: center;
-}
+    margin: 0 auto;
+}*/
 .voice_ttl {
     position: absolute;
-    width: 1180px;
+    width: 85%;
     height: 200px;
-    left: 220px;
-    top: 6995px;
+    left: 0px;
+    top: 400px;
     background-color: #fffdfd;
     opacity: 0.4;
     z-index: -1;
 }
+.voice_img {
+    position: relative;
+}
+.voice_ttl_1 {
+    display: block;
+    margin: 0 auto;
+}
 .voice_ttl_1 p {
     position: absolute;
-    width: 1180px;
-    height: 200px;
-    left: 150px;
-    top: 6990px;
-    margin-top: 50px;
-    margin-right: 100px;
+    width: 80%;
+    right: 100px;
+    top: 400px;
+    margin: 0 auto;
     text-align: right;
     font-size: 50px;
     z-index: 1;
@@ -750,7 +765,7 @@ a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.1rem;
     line-height: 48px;
     text-align: left;
     letter-spacing: 0.05em;
@@ -829,8 +844,8 @@ footer p {
 }
 /* ボタン全体 */
 #page_top{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -843,7 +858,7 @@ footer p {
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
       content: '\f062';
-      font-size: 50px;
+      font-size: 30px;
       color: #ffffff;
       position: absolute;
       width: 40px;
@@ -854,4 +869,20 @@ footer p {
       left: 0;
       margin: auto;
       text-align: center;
+    }
+    .c-form__submit button {
+        color: #fff;
+        font-size: 1.0rem;
+        border-radius: 5px;
+        text-decoration: none;
+        background: #5070fe;
+        box-shadow: 0 3px #352ba6;
+        position: relative;
+        display: inline-block;
+        top: -2px;
+        padding: 10px 20px;
+    }
+    .c-form__submit button:active {
+        box-shadow: 0 1px #352ba6;
+        top: 1px;
     }
