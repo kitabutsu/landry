@@ -14,7 +14,6 @@ nav {
     height: 40px;
     left: 30px;
     top: 16px;
-    
 }
 ul {
     display: flex;
@@ -64,16 +63,16 @@ a {
     z-index: 1;
 }
 
-.ttl {
+/*.ttl {
     /*position: relative;
     width: 813px;
     height: 108px;
     left: 176px;
     top: 220px;
 
-    background: rgba(6, 30, 245, 0.37);*/
+    background: rgba(6, 30, 245, 0.37);
 
-}
+}*/
 .ttl h1 {
     position: absolute;
     width: 813px;
@@ -156,6 +155,16 @@ a {
     line-height: 58px;
     text-indent: 5px;
 }
+.cp_img {
+    position: relative;
+}
+.cp_img img {
+    /*position: absolute;*/
+    width: 100%;
+    height: 85%;
+    left: 130px;
+    top: 1041px;
+}
 .cp_img p {
     font-family: 'Inter';
     font-style: normal;
@@ -167,13 +176,6 @@ a {
     color: #FF0404;
 
     transform: rotate(-25deg);
-}
-.cp_img img {
-    /*position: absolute;*/
-    width: 85%;
-    height: 85%;
-    left: 130px;
-    top: 1041px;
 }
 .cp_text .text_ttl {
     font-family: 'Inter';
@@ -188,14 +190,13 @@ a {
     margin-bottom: 40px;
 }
 .cp_text .text_ttl p span {
-    ont-family: 'jsMath-cmti10';
+    font-family: 'jsMath-cmti10';
     font-style: italic;
     font-weight: 500;
     font-size: 42px;
     line-height: 52px;
     text-align: center;
     letter-spacing: 0.05em;
-
     color: #FC0000;
 }
 .cp_text .text_period {
