@@ -39,8 +39,8 @@ a {
     position: absolute;
     width: 272px;
     height: 134px;
-    left: 86.29px;
-    top: 160px;
+    left: 10%;
+    top: 23%;
     border-radius: 45%;
 
     font-family: 'Inter';
@@ -62,20 +62,9 @@ a {
 
     z-index: 1;
 }
-
-/*.ttl {
-    /*position: relative;
-    width: 813px;
-    height: 108px;
-    left: 176px;
-    top: 220px;
-
-    background: rgba(6, 30, 245, 0.37);
-
-}*/
 .ttl h1 {
-    position: absolute;
-    width: 813px;
+    position: relative;
+    width: 65%;
     height: 108px;
     left: 209px;
     top: 256px;
@@ -84,7 +73,7 @@ a {
     font-family: 'Jacques Francois';
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 4rem;
     line-height: 84px;
 
     color: #FFFFFF;
@@ -100,7 +89,7 @@ a {
     padding: 1.5rem 5px;
     width: 200px;
     height: 150px;
-    top: 25%;
+    top: 5%;
     left: 80%;
     letter-spacing: 0.5em;
     /*line-height: 20px;*/
