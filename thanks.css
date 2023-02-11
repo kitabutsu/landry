@@ -1,0 +1,47 @@
+.company {
+    width: 100%;
+    background-color: lawngreen;
+    height: 100px;
+    color: #fff;
+    display: table;
+}
+.company h1 {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 200px;
+}
+.contact-ttl h2 {
+    padding-left: 200px;
+}
+.contact-area {
+    border-top: solid 2px gray;
+    background-color: rgb(237, 237, 237);
+    height: 500px;
+}
+.contact {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    width: 80%;
+    text-align: center;
+    border: solid 1px lightslategray;
+    padding: 50px 0;
+}
+button {
+    color: #fff;
+    font-size: 1.0rem;
+    border-radius: 5px;
+    text-decoration: none;
+    background: #5070fe;
+    box-shadow: 0 3px #352ba6;
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    padding: 10px 20px;
+}
+button:active {
+    box-shadow: 0 1px #352ba6;
+    top: 1px;
+}
