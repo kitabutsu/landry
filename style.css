@@ -694,6 +694,25 @@ a {
     margin: auto;
     padding-top: 100px;
   }
+  .align-items {
+    opacity: 0;
+    animation: fadein 1s ease forwards;
+  }
+  @keyframes fadein {
+    100% { opacity: 1; }
+  }
+  .align-items-1 {
+    animation-delay: 1s;
+  }
+  .align-items-2 {
+    animation-delay: 2s;
+  }
+  .align-items-3 {
+    animation-delay: 3s;
+  }
+  .align-items-4 {
+    animation-delay: 4s;
+  }
 
   /*レスポンシブ*/
     /*悩み事*/
@@ -720,6 +739,21 @@ a {
   .balloon-img {
     padding-top: 50px;
   }
+  .col-lg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0;
+    padding-top: 30px;
+  }
+  .align-items {
+    width: calc(100% / 3 + 35px);
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  
 }
 
 /*解決策*/
@@ -1413,3 +1447,4 @@ footer p {
         width: 100%;
     }
 }
+   
