@@ -129,6 +129,65 @@ a {
     transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 
+/* ハンバーガーメニュー */
+
+.header__hamburger {
+    width: 48px;
+    height: 100%;
+  
+  }
+  
+  .hamburger {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9999;
+  }
+
+/* ハンバーガーメニューの線 */
+.hamburger span {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: relative;
+    transition: ease .4s;
+    display: block;
+  }
+  
+  .hamburger span:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburger span:nth-child(2) {
+    margin: 8px 0;
+  }
+  
+  .hamburger span:nth-child(3) {
+    top: 0;
+  }
+  
+  /* ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+    transform: translateX(0);
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    top: -13px;
+    transform: rotate(-45deg);
+  }
+  .hamburger {
+    display: none;
+  }
+
 /*レスポンシブ*/
     /*ナビゲーション*/
 @media screen and (max-width:600px) {
@@ -207,7 +266,7 @@ a {
 
     font-family: 'Jacques Francois';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 4rem;
     line-height: 84px;
 
@@ -230,7 +289,7 @@ a {
     /*line-height: 20px;*/
     text-align: center;
     color: #6f5959;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
     background: #f9f8fa;
     border-radius: 50%;
@@ -276,14 +335,14 @@ a {
         margin: 1.5em 15px 1.5em 0;
         padding: 1.5rem 5px;
         width: 200px;
-        height: 150px;
+        height: 120px;
         top: 60%;
         left: 60%;
         letter-spacing: 0.5em;
         /*line-height: 20px;*/
         text-align: center;
         color: #6f5959;
-        font-size: 15px;
+        font-size: 0.8rem;
         font-weight: bold;
         background: #f9f8fa;
         border-radius: 50%;
@@ -293,9 +352,9 @@ a {
       .balloon3-right-btm:before {
         content: "";
         position: absolute;
-        bottom: 130px;
-        left: 20px;
-        margin-top: -15px;
+        bottom: 100px;
+        left: 25px;
+        margin-top: -20px;
         border: 15px solid transparent;
         border-left: 15px solid #faf9fa;
         z-index: 0;
@@ -393,7 +452,7 @@ a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 39px;
     letter-spacing: 0.05em;
     color: #fff;
@@ -412,6 +471,7 @@ a {
     top: -2px;
     padding: 0px 10px;
     margin: 20px 20px;
+    width: auto;
     
 }
 .cp_btn button:active {
@@ -455,7 +515,7 @@ a {
         letter-spacing: normal;
     }
     .cp_btn button a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin: 10px auto;
     }
 } 
@@ -535,10 +595,10 @@ a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 1.2rem;
+    line-height: 40px;
     text-align: center;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
 }
 .about_qs_text {
     margin-top: 50px;
@@ -644,6 +704,21 @@ a {
   }
   .about_text_con {
     font-size: 1.3rem;
+  }
+  .balloon4:after {
+    display: none;
+  }
+  .balloon4:before {
+    display: none;
+  }
+  .balloon5:after {
+    display: none;
+  }
+  .balloon5:before {
+    display: none;
+  }
+  .balloon-img {
+    padding-top: 50px;
   }
 }
 
@@ -875,7 +950,6 @@ a {
 
 .voice {
     background: rgba(143, 247, 222, 0.13);
-
 }
 .voice h2 {
     width: 80%;
@@ -892,19 +966,20 @@ a {
     margin-bottom: 40px;
 }
 .image {
-    position:relative;
+    /*position:relative;*/
     overflow:hidden;
     padding-bottom:50%;
-    margin: 0 auto;
 }
+.container .voice_img {
+    margin-left: 0;
+}
+/*.container .row {
+    height: 500px;
+}*/
 .img-1 {
-    position:absolute;
     height: auto;
     margin-left: 0px;
     margin-right: 0px;
-
-}
-.img-1 {
     width: 100%;
     height: 600px;
     z-index: -1;
@@ -913,10 +988,9 @@ a {
     width: 100%;
     height: 350px;
 }
-/*.voice_img .container .row {
-    position: relative;
+.voice_img .container .row {
     margin: 0 auto;
-}*/
+}
 .voice_ttl {
     position: absolute;
     width: 85%;
@@ -929,10 +1003,13 @@ a {
 }
 .voice_img {
     position: relative;
+    margin: 0 auto;
+    width: 85%;
 }
 .voice_ttl_1 {
     display: block;
     margin: 0 auto;
+    width: 85%;
 }
 .voice_ttl_1 p {
     position: absolute;
@@ -954,7 +1031,84 @@ a {
     font-size: 24px;
     font-weight: 600;
 }
-  
+.voice-com {
+    margin: 0 auto;
+}
+.col-lg-4 {
+    text-align: center;
+    height: 100px;
+}
+.voice-com h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card {
+    margin: 0 auto;
+}
+.card:hover {
+    top: -3px;
+    left: -3px;
+    box-shadow: 5px 5px rgba(75, 75, 75, 0.6);
+    cursor: zoom-in;
+}
+/*== ボタン共通設定 */
+.btn-read {
+    text-align: center;
+    margin-top: 100px;
+}
+.bgleft{
+    /*アニメーションの起点とするためrelativeを指定*/
+    position: relative;
+    overflow: hidden;
+        /*ボタンの形状*/
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #555; /*ボーダーの色と太さ */
+    padding: 10px 30px;
+    text-align: center;
+    outline: none;
+    /*アニメーションの指定*/   
+    transition: ease .2s;
+}
+
+/*ボタン内spanの形状*/
+.bgleft span {
+  position: relative;
+  z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color:#333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bgleft:hover span{
+  color:#fff;
+}
+
+/*== 背景が流れる（左から右） */
+.bgleft:before {
+  content: '';
+    /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+    /*色や形状*/
+  background:#5ac9eb;/*背景色*/
+  width: 100%;
+  height: 100%;
+    /*アニメーション*/
+  transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform: scale(0, 1);
+  transform-origin: right top;
+
+}
+
+/*hoverした際の形状*/
+.bgleft:hover:before{
+  transform-origin:left top;
+  transform:scale(1, 1);
+} 
+
 /*レスポンシブ*/
     /*オーナーズボイス*/
 @media screen and (max-width:600px) {
